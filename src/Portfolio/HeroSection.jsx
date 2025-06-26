@@ -2,10 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 const HeroSection = ({
-  name = "John Doe",
+  name = "Shirantha Dissanayake",
   title = "Full Stack Developer",
   description = "I build exceptional and accessible digital experiences for the web. Specialized in React, Node.js, and modern web technologies.",
-  profileImage = "https://api.dicebear.com/7.x/avataaars/svg?seed=developer",
+  profileImage = "https://media.licdn.com/dms/image/v2/D5603AQEhmBmxeU2DLQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1732076829377?e=1756339200&v=beta&t=kQi45eCcotD2GSUKIsoSsAwRToDUxR4sN0JAG9rmgQY",
   socialLinks = {
     github: "https://github.com",
     linkedin: "https://linkedin.com",

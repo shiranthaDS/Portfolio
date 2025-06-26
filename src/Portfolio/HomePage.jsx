@@ -156,7 +156,7 @@ const HomePage = () => {
                 <div className="relative w-64 h-64 mx-auto md:mx-0">
                   <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 blur-lg opacity-70"></div>
                   <img
-                    src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=400&q=80"
+                    src="https://avatars.githubusercontent.com/u/154401657?v=4"
                     alt="Developer Profile"
                     className="relative z-10 w-full h-full object-cover rounded-full border-4 border-gray-800"
                   />
