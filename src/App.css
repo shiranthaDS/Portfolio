@@ -1,7 +1,4 @@
-.App {
-  text-align: center;
-}
-
+/* Remove conflicting styles that interfere with Tailwind */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
