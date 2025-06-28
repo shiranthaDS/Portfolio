@@ -6,72 +6,72 @@ const ProjectsGrid = ({
   projects = [
     {
       id: "1",
-      title: "E-Commerce Platform",
+      title: "Landscaping & Garden Services Management System",
       description:
-        "A full-stack e-commerce platform with user authentication, product management, and payment processing.",
+        "This application Developed using the MERN stack (MongoDB, Express.js, React.js, Node.js)",
       image:
-        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+        "https://i.imgur.com/6zQISk6.png",
+      technologies: ["React", "Node.js", "MongoDB", "Express"],
       demoUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/shiranthaDS/GREENSCAPE",
     },
     {
       id: "2",
-      title: "Task Management App",
+      title: "Computer Spare Parts Management System",
       description:
-        "A collaborative task management application with real-time updates and team collaboration features.",
+        " This web-based project is implemented following the Model-View-Controller (MVC) architecture, utilizing Java as the primary backend language",
       image:
-        "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?w=800&q=80",
-      technologies: ["Vue.js", "Express", "PostgreSQL", "Socket.io"],
+        "https://i.imgur.com/bnK4OZa.png",
+      technologies: ["Java", "JSP", "MySql", "Bootstrap"],
       demoUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/shiranthaDS",
     },
     {
       id: "3",
-      title: "Social Media Dashboard",
+      title: "Online Fashion Store ",
       description:
-        "Analytics dashboard for social media platforms with data visualization and reporting features.",
+        "Developed a dynamic e-commerce website that allows users to browse, search, and purchase fashion items online.",
       image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-      technologies: ["React", "D3.js", "Firebase", "Material UI"],
+        "https://i.imgur.com/u4WikSp.png",
+      technologies: ["HTML", "JS", "Bootstrap", "PHP"],
       demoUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/shiranthaDS",
     },
     {
       id: "4",
-      title: "AI Image Generator",
+      title: "movie ticket booking app",
       description:
-        "Web application that uses machine learning to generate unique images based on text prompts.",
+        "The app offers an intuitive booking system, allowing users to select showtimes, dates, and seats .",
       image:
-        "https://images.unsplash.com/photo-1617791160505-6f00504e3519?w=800&q=80",
-      technologies: ["Next.js", "TensorFlow.js", "Tailwind CSS", "OpenAI API"],
+        "https://i.imgur.com/uhLSIq0.jpeg",
+      technologies: ["Kotlin", "Android Studio"],
       demoUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/shiranthaDS",
     },
     {
       id: "5",
-      title: "Crypto Tracker",
+      title: " Personal Finance Tracker App",
       description:
-        "Real-time cryptocurrency tracking application with price alerts and portfolio management.",
+        "Developed using Kotlin in Android Studio, designed to help users take control of their personal finances",
       image:
-        "https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=800&q=80",
-      technologies: ["React Native", "Redux", "CoinGecko API", "Chart.js"],
+        "https://i.imgur.com/sO7nagq.png",
+      technologies: ["Kotlin", "Android Studio", "SQLite"],
       demoUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/shiranthaDS",
     },
     {
       id: "6",
-      title: "Weather Forecast App",
+      title: "AI Study Planner ",
       description:
-        "Location-based weather forecast application with interactive maps and severe weather alerts.",
+        "Personalized study planner that uses AI to create customized study schedules based on user preferences and learning styles.",
       image:
-        "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&q=80",
-      technologies: ["Angular", "TypeScript", "OpenWeather API", "Leaflet"],
+        "https://i.imgur.com/TsuUb6m.png",
+      technologies: ["React",  "Node.js", "Mongo DB"],
       demoUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/shiranthaDS",
     },
   ],
-  title = "Featured Projects",
+  title = "",
 }) => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -84,25 +84,9 @@ const ProjectsGrid = ({
   };
 
   return (
-    <section className="w-full py-20 px-4 md:px-8 bg-gray-900" id="projects">
+    <section className="w-full pt-20 pb-0 px-4 md:px-8 bg-gray-900" id="projects">
       <div className="max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            {title}
-          </h2>
-          <div className="w-20 h-1 bg-purple-600 mx-auto"></div>
-          <p className="text-gray-400 mt-6 max-w-2xl mx-auto text-lg">
-            Explore my recent work and personal projects. Each project
-            represents unique challenges and solutions.
-          </p>
-        </motion.div>
-
+        
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -120,7 +104,7 @@ const ProjectsGrid = ({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center mt-16"
+          className="text-center mt-8"
         >
           <a
             href="#"

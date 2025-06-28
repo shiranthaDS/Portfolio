@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 const HeroSection = ({
   name = "Shirantha Dissanayake",
   title = "Full Stack Developer",
-  description = "I build exceptional and accessible digital experiences for the web. Specialized in React, Node.js, and modern web technologies.",
+  description = "I'm passionate about creating smart web apps. I bring sleek interfaces to life using React, modern UI frameworks, and creative design principles.",
   profileImage = "https://media.licdn.com/dms/image/v2/D5603AQEhmBmxeU2DLQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1732076829377?e=1756339200&v=beta&t=kQi45eCcotD2GSUKIsoSsAwRToDUxR4sN0JAG9rmgQY",
   socialLinks = {
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    github: "https://github.com/shiranthaDS",
+    linkedin: "https://www.linkedin.com/in/shiranthads/",
+    
   },
 }) => {
   const [typedText, setTypedText] = useState("");
@@ -35,7 +35,7 @@ const HeroSection = ({
     if (!ctx) return;
 
     canvas.width = window.innerWidth;
-    canvas.height = 800;
+    canvas.height = 600;
 
     const particles = [];
 
@@ -123,7 +123,7 @@ const HeroSection = ({
 
     const handleResize = () => {
       canvas.width = window.innerWidth;
-      canvas.height = 800;
+      canvas.height = 500;
       particles.length = 0;
       createParticles();
     };
@@ -136,13 +136,13 @@ const HeroSection = ({
   }, []);
 
   return (
-    <div className="relative w-full h-[800px] bg-black overflow-hidden">
+    <div className="relative w-full h-[500px] bg-black overflow-hidden">
       <canvas
         ref={canvasRef}
         className="absolute top-0 left-0 w-full h-full z-0"
       />
 
-      <div className="relative z-10 container mx-auto px-4 h-full flex flex-col md:flex-row items-center justify-center">
+      <div className="relative z-10 container mx-auto px-4 h-full flex flex-col md:flex-row items-center justify-start pt-12">
         <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
           <motion.h1
             className="text-4xl md:text-6xl font-bold mb-4 text-white"
@@ -178,7 +178,12 @@ const HeroSection = ({
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 0.8 }}
           >
-            <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-md flex items-center">
+            <a 
+              href={socialLinks.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-md flex items-center"
+            >
               View Projects
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -195,11 +200,16 @@ const HeroSection = ({
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
-            </button>
+            </a>
 
-            <button className="px-6 py-3 border border-blue-500 text-blue-500 hover:bg-blue-950 rounded-md">
+            <a 
+              href={socialLinks.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 border border-blue-500 text-blue-500 hover:bg-blue-950 rounded-md"
+            >
               Contact Me
-            </button>
+            </a>
           </motion.div>
 
           <motion.div
@@ -250,26 +260,6 @@ const HeroSection = ({
                 <circle cx="4" cy="4" r="2"></circle>
               </svg>
             </a>
-            <a
-              href={socialLinks.twitter}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-              </svg>
-            </a>
           </motion.div>
         </div>
 
@@ -282,11 +272,11 @@ const HeroSection = ({
           <div className="relative">
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 animate-spin-slow blur-md"></div>
 
-            <div className="relative rounded-full border-4 border-blue-500 overflow-hidden h-64 w-64 md:h-80 md:w-80">
+            <div className="relative rounded-full border-4 border-blue-500 overflow-hidden h-64 w-64 md:h-80 md:w-80 bg-gray-900">
               <img
                 src={profileImage}
                 alt="Profile"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
 

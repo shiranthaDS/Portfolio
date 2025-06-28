@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import HeroSection from "./HeroSection";
 import ProjectsGrid from "./ProjectsGrid";
 import SkillsDisplay from "./SkillsDisplay";
+import EducationTimeline from "./EducationTimeline";
+import ServicesSection from "./ServicesSection";
 
 const HomePage = () => {
   return (
@@ -16,7 +18,7 @@ const HomePage = () => {
             transition={{ duration: 0.5 }}
             className="text-xl font-bold"
           >
-            <span className="text-blue-500">Dev</span>Portfolio
+            <span className="text-blue-500"></span>Portfolio
           </motion.div>
 
           <motion.ul
@@ -70,14 +72,14 @@ const HomePage = () => {
       {/* Main Content */}
       <main>
         {/* Hero Section */}
-        <section id="home" className="pt-20">
+        <section id="home" className="pt-16">
           <HeroSection />
         </section>
 
         {/* Projects Section */}
         <section
           id="projects"
-          className="py-20 bg-gradient-to-b from-black to-gray-900"
+          className="pt-8 pb-0 bg-gradient-to-b from-black to-gray-900"
         >
           <div className="container mx-auto px-4">
             <motion.div
@@ -104,7 +106,7 @@ const HomePage = () => {
         {/* Skills Section */}
         <section
           id="skills"
-          className="py-20 bg-gradient-to-b from-gray-900 to-black"
+          className="pt-4 pb-2 bg-gradient-to-b from-gray-900 to-black"
         >
           <div className="container mx-auto px-4">
             <motion.div
@@ -114,24 +116,20 @@ const HomePage = () => {
               viewport={{ once: true }}
               className="mb-12 text-center"
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Technical Skills
-              </h2>
-              <div className="w-20 h-1 bg-blue-500 mx-auto"></div>
-              <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
-                A comprehensive overview of my technical expertise and
-                proficiency in various technologies.
-              </p>
+              
             </motion.div>
 
-            <SkillsDisplay />
+           
+            <EducationTimeline />
+             <SkillsDisplay />
+             <ServicesSection/>
           </div>
         </section>
 
         {/* About Section */}
         <section
           id="about"
-          className="py-20 bg-gradient-to-b from-black to-gray-900"
+          className="pt-6 pb-8 bg-gradient-to-b from-black to-gray-900"
         >
           <div className="container mx-auto px-4">
             <motion.div
@@ -174,18 +172,12 @@ const HomePage = () => {
                   Full-Stack Developer & UI/UX Enthusiast
                 </h3>
                 <p className="text-gray-300 mb-4">
-                  I'm a passionate full-stack developer with over 5 years of
-                  experience building modern web applications. My journey in
-                  tech started with a curiosity about how websites work, which
-                  evolved into a deep love for creating elegant solutions to
-                  complex problems.
+                  I’m Shirantha Dissanayake, a passionate Full Stack Developer and Software Engineering undergraduate at SLIIT. I specialize in crafting modern, responsive web applications. With a solid foundation in both front-end and back-end technologies.
                 </p>
                 <p className="text-gray-300 mb-6">
-                  I specialize in React, Node.js, and modern JavaScript
+                  I specialize in MERN stack,Java,Spring Boot and modern JavaScript
                   frameworks, with a keen eye for design and user experience.
-                  When I'm not coding, you can find me exploring new
-                  technologies, contributing to open-source projects, or sharing
-                  my knowledge through technical writing and mentoring.
+                  many featuring AI, automation, and modern UI/UX. I’m driven by continuous learning, teamwork, and the pursuit of becoming a skilled IT professional.
                 </p>
                 <div className="flex gap-4">
                   <button className="px-4 py-2 rounded-md border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-colors">
@@ -203,7 +195,7 @@ const HomePage = () => {
         {/* Contact Section */}
         <section
           id="contact"
-          className="py-20 bg-gradient-to-b from-gray-900 to-black"
+          className="pt-8 pb-20 bg-gradient-to-b from-gray-900 to-black"
         >
           <div className="container mx-auto px-4">
             <motion.div
@@ -315,7 +307,7 @@ const HomePage = () => {
                       </div>
                       <div>
                         <p className="text-sm text-gray-400">Email</p>
-                        <p className="text-white">contact@devportfolio.com</p>
+                        <p className="text-white">shiranthadw@gmail.com</p>
                       </div>
                     </div>
 
@@ -340,7 +332,7 @@ const HomePage = () => {
                       <div>
                         <p className="text-sm text-gray-400">LinkedIn</p>
                         <p className="text-white">
-                          linkedin.com/in/devportfolio
+                          linkedin.com/in/shiranthads
                         </p>
                       </div>
                     </div>
@@ -363,7 +355,7 @@ const HomePage = () => {
                       </div>
                       <div>
                         <p className="text-sm text-gray-400">GitHub</p>
-                        <p className="text-white">github.com/devportfolio</p>
+                        <p className="text-white">github.com/shiranthaDS</p>
                       </div>
                     </div>
                   </div>
@@ -371,18 +363,76 @@ const HomePage = () => {
                   <div className="mt-8 pt-6 border-t border-gray-700">
                     <h4 className="text-lg font-medium mb-4">Follow Me</h4>
                     <div className="flex gap-4">
-                      {["twitter", "instagram", "dribbble", "medium"].map(
-                        (platform) => (
-                          <a
-                            key={platform}
-                            href={`#${platform}`}
-                            className="w-10 h-10 rounded-full bg-gray-700 hover:bg-blue-500 flex items-center justify-center transition-colors duration-300"
-                          >
-                            <span className="sr-only">{platform}</span>
-                            <div className="w-5 h-5 bg-white/80 rounded-full"></div>
-                          </a>
-                        )
-                      )}
+                      <a
+                        href="#twitter"
+                        className="w-10 h-10 rounded-full bg-gray-700 hover:bg-blue-500 flex items-center justify-center transition-colors duration-300"
+                      >
+                        <span className="sr-only">Twitter</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="18"
+                          height="18"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          className="text-white"
+                        >
+                          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                      </a>
+                      <a
+                        href="#instagram"
+                        className="w-10 h-10 rounded-full bg-gray-700 hover:bg-blue-500 flex items-center justify-center transition-colors duration-300"
+                      >
+                        <span className="sr-only">Instagram</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="18"
+                          height="18"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="text-white"
+                        >
+                          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                          <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                          <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                        </svg>
+                      </a>
+                      <a
+                        href="#facebook"
+                        className="w-10 h-10 rounded-full bg-gray-700 hover:bg-blue-500 flex items-center justify-center transition-colors duration-300"
+                      >
+                        <span className="sr-only">Facebook</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="18"
+                          height="18"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          className="text-white"
+                        >
+                          <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                      </a>
+                      <a
+                        href="#youtube"
+                        className="w-10 h-10 rounded-full bg-gray-700 hover:bg-blue-500 flex items-center justify-center transition-colors duration-300"
+                      >
+                        <span className="sr-only">YouTube</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="18"
+                          height="18"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          className="text-white"
+                        >
+                          <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -398,7 +448,7 @@ const HomePage = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <p className="text-gray-400">
-                &copy; {new Date().getFullYear()} DevPortfolio. All rights
+                &copy; {new Date().getFullYear()}  All rights
                 reserved.
               </p>
             </div>
