@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate SD Favicon</title>
+</head>
+<body>
+    <canvas id="favicon" width="32" height="32" style="border: 1px solid #ccc;"></canvas>
+    <br><br>
+    <button onclick="generateFavicon()">Generate SD Favicon</button>
+    <br><br>
+    <a id="downloadLink" style="display: none;">Download favicon.ico</a>
+
+    <script>
+        function generateFavicon() {
+            const canvas = document.getElementById('favicon');
+            const ctx = canvas.getContext('2d');
+            
+            // Clear canvas
+            ctx.clearRect(0, 0, 32, 32);
+            
+            // Draw background (blue)
+            ctx.fillStyle = '#2563eb';
+            ctx.roundRect(0, 0, 32, 32, 4);
+            ctx.fill();
+            
+            // Draw text "SD"
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 14px Arial';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('SD', 16, 16);
+            
+            // Convert to blob and create download link
+            canvas.toBlob(function(blob) {
+                const url = URL.createObjectURL(blob);
+                const link = document.getElementById('downloadLink');
+                link.href = url;
+                link.download = 'favicon.png';
+                link.style.display = 'block';
+                link.textContent = 'Download SD favicon.png';
+            });
+        }
+        
+        // Generate on load
+        window.onload = generateFavicon;
+    </script>
+</body>
+</html>
