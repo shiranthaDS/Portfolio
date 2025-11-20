@@ -68,3 +68,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## ✨ Features / 🧩 Key Highlights
+
+- 🔐 **JWT Authentication + Role-based Access** (Traveler, Owner, Admin)  
+- ⚙️ **CI/CD Pipelines** with GitHub Actions & **Live Frontend Deployment** on Vercel  
+- 🏨 **Property Management System** (image uploads, filtering, owner dashboard, admin approval)  
+- 🚗 **Vehicle Rental System** (availability checks, reservations, admin oversight)  
+- 💳 **PayPal Sandbox Integration** (order create & capture flow)  
+- ⭐ **Review & Rating System** with moderation and analytics  
+- 📊 Admin Dashboard — user/content moderation, booking & revenue analytics  
+- 🎨 Modern, responsive UI (React + Framer Motion) — mobile-first
+
