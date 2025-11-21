@@ -69,14 +69,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-## ✨ Features / 🧩 Key Highlights
-
-- 🔐 **JWT Authentication + Role-based Access** (Traveler, Owner, Admin)  
-- ⚙️ **CI/CD Pipelines** with GitHub Actions
-- 🏨 **Property Management System** 
-- 🚗 **Vehicle Rental System** 
-- 💳 **PayPal Sandbox Integration** 
-- ⭐ **Review & Rating System** 
-- 📊 Admin Dashboard — user/content moderation, booking & revenue analytics  
-
-
